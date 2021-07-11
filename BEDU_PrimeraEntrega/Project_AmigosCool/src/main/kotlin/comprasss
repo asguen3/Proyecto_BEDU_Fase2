@@ -1,0 +1,30 @@
+fun main(){
+class Comprar {
+
+    fun comProduct(){
+        println("COMPRAR...")
+        println("******************************")
+        println("¿Que deseas comprar?")
+        println("1) Playeras")
+        println("2) Stickers")
+        println("3) Sudaderas")
+        println("4) Juegos")
+        println("5) Regresar al Menu")
+        val opc = readLine()!!.toInt()
+
+        //val play = playeras(name: String, precio: Int) : productss(name, precio)
+        val stic =Stic()
+        val sud =Sud()
+        val jue =Jue()
+
+        when (opc) {
+          //  1 -> play.comprarPlay()
+            2 -> stic.comprarStic()
+            3 -> sud.comprarSud()
+            4 -> jue.comprarJue()
+            5 -> main()
+            else -> println("Opcion Invalida")
+        }
+    }
+}
+}
